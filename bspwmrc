@@ -1,0 +1,36 @@
+#!/usr/bin/sh
+
+sxhkd &
+xsetroot -cursor_name left_ptr &
+picom -b &
+feh --bg-scale ~/Wallpapers/Wallpaper.png &
+polybar-msg cmd quit &
+polybar &
+/usr/libexec/polkit-gnome-authentication-agent-1 &
+dunst &
+parcellite &
+xset s off -dpms &
+
+bspc monitor -d 1 2 3 4 5 6 7 8 9
+
+bspc config border_width        4
+bspc config window_gap          10
+
+bspc config split_ratio          0.5
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc config focus_follows_pointer true
+
+bspc config normal_border_color "#404552" 
+bspc config focused_border_color "#5294e2" 
+
+bspc config top_padding		34
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+bspc rule -a Mplay state=floating
