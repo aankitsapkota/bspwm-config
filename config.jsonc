@@ -1,0 +1,161 @@
+{
+
+"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+"logo": {
+	"type": "kitty",
+	"source": "~/.config/fastfetch/fastfetch_logo.png",
+	"width": 30,
+	"height": 21
+},
+
+"display": {
+	"separator": " ",
+},
+
+"modules": [
+	{
+            "type": "custom",
+            "format": "┌────────────────────────── System ──────────────────────────┐",
+	    "outputColor": "blue"
+        },
+        {
+            "type": "kernel",
+            "key": "   ",
+	    "keyColor": "blue",
+	    "outputColor": "blue"
+        },
+        {
+            "type": "os",
+            "key": "   ",
+	    "keyColor": "blue",
+	    "outputColor": "blue"
+        },
+        {
+            "type": "uptime",
+            "key": "   ",
+	    "keyColor": "blue",
+	    "outputColor": "blue"
+        },
+        {
+            "type": "custom",
+            "format": "└────────────────────────────────────────────────────────────┘"
+        },
+        {
+            "type": "custom",
+            "format": "┌───────────────────────── Hardware ─────────────────────────┐",
+	    "outputColor": "yellow"
+        },
+        {
+            "type": "cpu",
+            "key": "   ",
+	    "keyColor": "yellow",
+	    "outputColor": "yellow"
+        },
+        {
+            "type": "gpu",
+            "key": "   ",
+	    "keyColor": "yellow",
+	    "outputColor": "yellow"
+        },
+        {
+            "type": "memory",
+            "key": "   ",
+	    "keyColor": "yellow",
+	    "outputColor": "yellow"
+        },
+        {
+            "type": "disk",
+            "key": "   ",
+	    "keyColor": "yellow",
+	    "outputColor": "yellow"
+        },
+        {
+            "type": "display",
+            "key": "   ",
+	    "keyColor": "yellow",
+	    "outputColor": "yellow"
+        },
+        {
+            "type": "custom",
+            "format": "└────────────────────────────────────────────────────────────┘"
+        },
+        {
+            "type": "custom",
+            "format": "┌───────────────────────── Software ─────────────────────────┐",
+	    "outputColor": "red"
+        },
+
+        {
+            "type": "wm",
+            "key": "   ",
+	    "keyColor": "red",
+	    "outputColor": "red"
+        },
+        {
+            "type": "lm",
+            "key": "   ",
+	    "keyColor": "red",
+	    "outputColor": "red"
+        },
+        {
+            "type": "packages",
+            "key": "   ",
+	    "keyColor": "red",
+	    "outputColor": "red"
+        },
+        {
+            "type": "terminal",
+            "key": "   ",
+	    "keyColor": "red",
+	    "outputColor": "red"
+        },
+        {
+            "type": "shell",
+            "key": "   ",
+	    "keyColor": "red",
+	    "outputColor": "red"
+        },
+        {
+            "type": "custom",
+            "format": "└────────────────────────────────────────────────────────────┘"
+        },
+        {
+            "type": "colors",
+            "paddingLeft": 23,
+            "symbol": "circle"
+        }
+
+
+
+    //"title",
+    //"os",
+    //"host",
+    //"kernel",
+    //"uptime",
+    //"packages",
+    //"shell",
+    //"display",
+    //"de",
+    //"wm",
+    //"wmtheme",
+    //"theme",
+    //"icons",
+    //"font",
+    //"cursor",
+    //"terminal",
+    //"terminalfont",
+    //"cpu",
+    //"gpu",
+    //"memory",
+    //"swap",
+    //"disk",
+    //"localip",
+    //"battery",
+    //"poweradapter",
+    //"locale",
+    //"break",
+    //"colors"
+]
+
+}
